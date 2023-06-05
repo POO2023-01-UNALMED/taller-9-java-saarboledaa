@@ -140,6 +140,9 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 				number2 = displayText.getText();
 				if (!Objects.equals(number1, "") && !Objects.equals(number2, ""))
 					displayText.setText(resultado());
+				number1 = "";
+				number2 = "";
+				operator = "";
 			}
 			case "C" ->{
 				number1 = "";
